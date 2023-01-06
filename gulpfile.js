@@ -20,7 +20,7 @@ function pugTask() {
         .pipe(pug({
             pretty: true
         }))
-        .pipe(dest("./dist"));
+        .pipe(dest("./"));
 }
 
 // Sass Task
@@ -35,7 +35,7 @@ function scssTask() {
             suffix: ".min"
         }))
         .pipe(sourcemaps.write("."))
-        .pipe(dest("./dist/assets/css"));
+        .pipe(dest("./assets/css"));
 }
 
 // Theme Js Task
@@ -52,7 +52,7 @@ function jsThemeTask() {
             suffix: ".min"
         }))
         .pipe(sourcemaps.write("."))
-        .pipe(dest("./dist/assets/js"));
+        .pipe(dest("./assets/js"));
 }
 
 // Vendor Js Task
@@ -69,15 +69,15 @@ function jsVendorTask() {
             suffix: ".min"
         }))
         .pipe(sourcemaps.write("."))
-        .pipe(dest("./dist/assets/js"));
+        .pipe(dest("./assets/js"));
 }
 
 // Copy Task
 function copyTask() {
     var images = src( "./src/images/**" )
-                .pipe(copy("./dist/assets", { prefix: 1 }))
+                .pipe(copy("./assets", { prefix: 1 }))
     var fonts = src( "./src/fonts/**" )
-                .pipe(copy("./dist/assets", { prefix: 1 }))
+                .pipe(copy("./assets", { prefix: 1 }))
     return merge(images, fonts);
 }
 
@@ -85,7 +85,7 @@ function copyTask() {
 function browsersyncServe(cb) {
     browsersync.init({
         server: {
-            baseDir: "./dist",
+            baseDir: "./",
             index: "./index.html"
         }
     });
