@@ -1,0 +1,28 @@
+@each $color, $value in $theme-colors {
+    $color-soft: to-soft($value);
+
+    .bg-#{$color}-soft {
+        background-color: $color-soft !important;
+    }
+
+    .text-bg-#{$color}-soft {
+        color: $value;
+        background-color: $color-soft !important;
+    }
+}
+
+@each $color, $value in $colors {
+    $color-soft: to-soft($value);
+
+    .text-#{$color} {
+        --#{$prefix}text-opacity: 1;
+        color: rgba(var(--#{$prefix}#{$color}-rgb), var(--#{$prefix}text-opacity)) !important;
+    }
+
+    .bg-#{$color}-soft {
+        background-color: $color-soft !important;
+    }
+}
+
+// Bootstrap helper color-bg
+@import "~bootstrap/scss/helpers/_color-bg";

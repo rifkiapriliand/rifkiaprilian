@@ -1,0 +1,40 @@
+.section {
+    .sub-heading {
+        position: relative;
+        padding-left: calc(rem(8px) + rem(14px));
+
+        span {
+            font-weight: $font-weight-base;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            background-color: $primary;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: rem(8px);
+            height: rem(8px);
+            border-radius: 50rem;
+        }
+    }
+
+    .heading-line {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            background-color: $primary;
+            height: rem(8px);
+            width: calc(100% - rem(45px));
+            top: calc(100% - 33%);
+            right: 0;
+            z-index: -1;
+        }
+    }
+}
+
+// Bootstrap type
+@import "~bootstrap/scss/_type";

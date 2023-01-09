@@ -1,0 +1,135 @@
+// Bootstrap navbar
+@import "~bootstrap/scss/_navbar";
+
+#navbarWrapper {
+    --#{$prefix}navbar-gap: #{$navbar-gap};
+
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    margin-top: var(--#{$prefix}navbar-gap);
+}
+
+.navbar {
+    --#{$prefix}navbar-brand-margin-end: 0;
+
+    position: relative;
+    padding: 0!important;
+}
+
+.navbar,
+.navbar-desktop,
+.navbar-mobile {
+    background-color: $white;
+    padding: var(--#{$prefix}navbar-padding-y) var(--#{$prefix}navbar-padding-x);
+    height: var(--#{$prefix}navbar-height);
+    border-radius: $border-radius;
+}
+
+.navbar-desktop {
+    --#{$prefix}navbar-padding-x: #{rem(30px)};
+    --#{$prefix}navbar-padding-y: #{rem(10px)};
+    --#{$prefix}navbar-height: #{$navbar-height};
+
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    width: 100%;
+
+    .navbar-nav {
+        flex-direction: row;
+
+        .nav-item {
+            &:not(:first-child) {
+                margin-left: rem(45px);
+            }
+        }
+
+        .nav-link {
+            &.active {
+                position: relative;
+    
+                &::after {
+                    position: absolute;
+                    content: "";
+                    background-color: $primary;
+                    width: rem(5px);
+                    height: rem(5px);
+                    left: 50%;
+                    bottom: rem(-9px);
+                    transform: translateX(-50%);
+                    border-radius: 50rem;
+                }
+            }
+        }
+    }
+}
+
+.navbar-mobile {
+    --#{$prefix}navbar-padding-x: #{rem(30px)};
+    --#{$prefix}navbar-padding-y: #{rem(20px)};
+
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1041;
+    box-shadow: $box-shadow;
+
+    &.show {
+        --animate-duration: .5s;
+        display: block;
+    }
+
+    .navbar-nav {
+        margin-top: rem(20px);
+
+        .nav-link {
+            padding: rem(10px) 0;
+        }
+    }
+}
+
+.navbar-nav {
+    --#{$prefix}nav-link-padding-y: 0;
+    --#{$prefix}nav-link-padding-x: #{rem(10px)};
+    --#{$prefix}nav-link-font-weight: #{$font-weight-semibold};
+    --#{$prefix}nav-link-color: #{$body-color};
+    --#{$prefix}nav-link-hover-color: #{$primary};
+
+    .nav-link {
+        &:hover.active {
+            color: var(--#{$prefix}nav-link-hover-color);
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    #navbarWrapper {
+        --#{$prefix}navbar-gap: #{$navbar-gap-sm};
+    }
+
+    .navbar-desktop {
+        .navbar-nav {
+            display: none;
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .navbar-desktop {
+        .btn-bars {
+            display: none;
+        }
+    }
+}
+
+.navbar-overlay {
+    background: rgba(255, 255, 255, 0.18) !important;
+    opacity: 1;
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+}

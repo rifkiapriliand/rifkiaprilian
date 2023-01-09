@@ -1,0 +1,14 @@
+.overlay {
+    position: fixed;
+    background: rgba($offcanvas-backdrop-bg, $offcanvas-backdrop-opacity);
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: $zindex-offcanvas-backdrop;
+
+    &.active {
+        display: block;
+    }
+}

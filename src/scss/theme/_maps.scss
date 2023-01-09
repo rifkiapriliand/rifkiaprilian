@@ -1,0 +1,7 @@
+$colors-rgb: map-loop($colors, to-rgb, "$value") !default;
+
+$colors-soft: map-loop($colors, to-soft, "$value") !default;
+$theme-colors-soft: map-loop($theme-colors, to-soft, "$value") !default;
+
+// Bootstrap maps
+@import "~bootstrap/scss/_maps";

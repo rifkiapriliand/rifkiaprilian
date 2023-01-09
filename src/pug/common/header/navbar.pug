@@ -1,0 +1,26 @@
+- var navbarNav = [{"text": "Project"}, {"text": "Blog"}]
+
+mixin navbar-brand
+    a.navbar-brand(href="#")
+        h5.fw-bold.mb-0
+            | rifkiaprilian
+            span.text-primary .
+
+mixin navbar-nav(navActive)
+    ul.navbar-nav
+        each nav in navbarNav
+            li.nav-item
+                a.nav-link(href="#", class=(nav.text === navActive ? "active" : ""))= nav.text
+
+nav#navbarWrapper
+    .container 
+        .navbar
+            .navbar-desktop
+                +navbar-brand
+                +navbar-nav
+                +btn-bars(class="navbar-toggle")
+            .navbar-mobile
+                .d-flex.align-items-center.justify-content-between 
+                    +navbar-brand 
+                    +btn-close(class="navbar-toggle")
+                +navbar-nav

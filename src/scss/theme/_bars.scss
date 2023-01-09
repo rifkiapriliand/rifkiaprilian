@@ -1,0 +1,26 @@
+.btn-bars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    width: calc($icon-size + rem(3px));
+    height: $icon-size;
+    padding: 0;
+    border: none;
+
+    span {
+        display: block;
+        background-color: $body-color;
+        height: rem(3px);
+        width: 100%;
+        border-radius: rem(3px);
+
+        &:not(:first-child) {
+            margin-top: rem(4px);
+        }
+
+        &:nth-child(2) {
+            width: calc(100% - 20%);
+        }
+    }
+}

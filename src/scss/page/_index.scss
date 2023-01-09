@@ -1,0 +1,33 @@
+body#homepage-page {
+    #section-header {
+        padding-top: calc($navbar-height + calc($navbar-gap * 2) + rem(30px));
+        padding-bottom: calc($navbar-height + calc($navbar-gap * 2) + rem(30px));
+
+        .btn {
+            box-shadow: $box-shadow;
+        }
+
+        @include media-breakpoint-up(lg) {
+            .heading {
+                max-width: 50%;
+            }
+        }
+
+        @include media-breakpoint-down(xl) {
+            padding-top: calc($navbar-height + calc($navbar-gap-sm * 2) + rem(30px));
+            padding-bottom: calc($navbar-height + calc($navbar-gap-sm * 2) + rem(30px));
+        }
+    }
+
+    #section-about-us {
+        .heading {
+            width: 90%;
+        }
+
+        @include media-breakpoint-between(xs, md) {
+            .heading {
+                width: 60%;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+// Bootstrap buttons
+@import "~bootstrap/scss/_buttons";
+
+@each $color, $value in $theme-colors-soft {
+    .btn-#{$color}-soft {
+        @include button-variant($value, $value);
+    }
+}
+
+.btn {
+    --#{$prefix}btn-font-weight: #{$btn-font-weight};
+    --#{$prefix}btn-active-border-color: transparent;
+
+    font-weight: var(--#{$prefix}btn-font-weight);
+
+    .icon {
+        width: rem(18px);
+        height: rem(18px);
+    }
+}
+
+.btn-white {
+    @include button-variant($white, $white);
+}

@@ -1,0 +1,6 @@
+@function to-soft($color) {
+    @return tint-color($color, $soft-color-amount);
+}
+
+// Bootstrap functions
+@import "~bootstrap/scss/_functions";

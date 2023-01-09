@@ -16,7 +16,7 @@ const browsersync                                = require("browser-sync").creat
 
 // Pug Task
 function pugTask() {
-    return src("./src/pug/index.pug")
+    return src(["./src/pug/page/**/*.pug"])
         .pipe(pug({
             pretty: true
         }))

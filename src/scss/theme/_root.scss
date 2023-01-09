@@ -1,0 +1,14 @@
+:root {
+
+    @each $color, $value in $colors-rgb {
+        --#{$prefix}#{$color}-rgb: #{$value};
+    }
+
+    @each $color, $value in $colors-soft {
+        --#{$prefix}#{$color}-soft: #{$value};
+    }
+
+}
+
+// Bootstrap root
+@import "~bootstrap/scss/_root";

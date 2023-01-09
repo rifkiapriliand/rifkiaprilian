@@ -1,0 +1,21 @@
+.counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: rem(150px);
+    max-width: rem(150px);
+    height: rem(145px);
+    max-height: rem(145px);
+    padding: rem(20px) rem(11px);
+    text-align: center;
+    border-radius: $border-radius;
+}
+
+.counter-count {
+    margin-bottom: 0;
+}
+
+.counter-title {
+    font-weight: $font-weight-semibold;
+    margin-top: rem(5px);
+}

@@ -37,6 +37,8 @@
     "sass-rem": "^3.0.0"
   },
   "dependencies": {
-    "bootstrap": "^5.2.3"
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.3"
   }
 }

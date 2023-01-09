@@ -1,0 +1,79 @@
+include ../common/header/header-files
+
+body#homepage-page
+    include ../common/header/navbar
+
+    section.section.bg-primary-soft#section-header
+        .container.d-flex.flex-column
+            .heading.d-flex.flex-column.mx-auto.text-center
+                h5.mb-3
+                    span.fw-normal Hi, i'am 
+                    | Rifqi Aprlian D
+                h1.mb-0
+                    span.fw-normal An 
+                    | Website Developer 
+                    span.fw-normal and 
+                    | Video Editor
+            a(href="#").btn.btn-white.btn-lg.mt-5.mx-auto.rounded
+                | Hire Me 
+                i.ri.ri-arrow-right-long.fs-3.ms-2
+    
+    section.section.section-gap#section-about-us
+        .container 
+            .row
+                .col-12.col-md-5.col-lg-4
+                    h5.sub-heading.mb-2
+                        span About 
+                        | Us
+                    h2.heading.mb-0 Get to know me 
+                        span.heading-line further.
+                .col-12.col-md-7.col-lg-8.mt-3.mt-md-0
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue lacus urna, quis pretium ipsum ullamcorper bibendum. Aenean eleifend euismod massa, in facilisis est pretium vitae.
+                    .d-flex.mt-3
+                        .btn.btn-lg.btn-primary-soft
+                            i.ri.ri-download.fs-3.me-1
+                            | Download Cv
+                        .d-flex.align-items-center.ms-3
+                            a.btn.btn-link.text-body.p-0(href="#")
+                                i.ri.ri-instagram.fs-3
+                            a.btn.btn-link.text-body.p-0.ms-2(href="#")
+                                i.ri.ri-whatsapp.fs-3
+
+    section.section.section-gap#section-skill 
+        .container.d-flex.flex-column.align-items-center
+            h2.heading.mb-0
+                span.fw-normal My 
+                span.span.heading-line Skills
+            .row.mt-5
+                .col-6.col-sm-3.d-flex.justify-content-center.py-1.py-sm-0
+                    .counter.bg-greenishCyan-soft
+                        h3.counter-count.text-greenishCyan 95%
+                        .counter-title Html
+                .col-6.col-sm-3.d-flex.justify-content-center.py-1.py-sm-0
+                    .counter.bg-green-soft
+                        h3.counter-count.text-green 95%
+                        .counter-title CSS 3
+                .col-6.col-sm-3.d-flex.justify-content-center.py-1.py-sm-0
+                    .counter.bg-yellow-soft
+                        h3.counter-count.text-yellow 65%
+                        .counter-title Javascript
+                .col-6.col-sm-3.d-flex.justify-content-center.py-1.py-sm-0
+                    .counter.bg-blue-soft
+                        h3.counter-count.text-blue 95%
+                        .counter-title Wordpress
+        
+    section.section.section-gap#section-project 
+        .container
+            .d-flex.flex-column.align-items-center
+                h5.sub-heading.mb-2
+                    span Complete 
+                    | Project
+                h2.heading.mb-0 Our best 
+                    span.heading-line work.
+            .row.mt-5
+
+            .d-flex
+                .btn.btn-lg.btn-primary-soft.mt-5.mx-auto
+                    | View More
+
+include ../common/footer/footer-files
