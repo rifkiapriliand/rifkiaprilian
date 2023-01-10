@@ -1,7 +1,13 @@
 body#homepage-page {
     #section-header {
+        position: relative;
         padding-top: calc($navbar-height + calc($navbar-gap * 2) + rem(30px));
         padding-bottom: calc($navbar-height + calc($navbar-gap * 2) + rem(30px));
+
+        .container {
+            position: relative;
+            z-index: 10;
+        }
 
         .btn {
             box-shadow: $box-shadow;
@@ -16,6 +22,183 @@ body#homepage-page {
         @include media-breakpoint-down(xl) {
             padding-top: calc($navbar-height + calc($navbar-gap-sm * 2) + rem(30px));
             padding-bottom: calc($navbar-height + calc($navbar-gap-sm * 2) + rem(30px));
+        }
+
+        // hero shape image
+        .hero-shape-image {
+            --animate-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        .shape-image-two,
+        .shape-image-four {
+            width: rem(22px);
+            height: auto;
+        }
+
+        .shape-image-five {
+            width: rem(27px);
+            height: auto;
+        }
+
+        .shape-image-six {
+            width: rem(31px);
+            height: auto;
+        }
+
+        @include media-breakpoint-up(xs) {
+            .shape-image-one {
+                top: 25%;
+                left: 5%;
+            }
+
+            .shape-image-two {
+                top: 40%;
+                left: 11%;
+            }
+            
+            .shape-image-three {
+                top: 75%;
+                left: 10%;
+            }
+
+            .shape-image-four {
+                top: 6%;
+                right: 5%;
+            }
+
+            .shape-image-five {
+                top: 65%;
+                right: 5%;
+            }
+
+            .shape-image-six {
+                top: 80%;
+                right: 11%;
+            }
+
+            .shape-image-seven {
+                top: 80%;
+                left: -35%;
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            .shape-image-two,
+            .shape-image-four,
+            .shape-image-six {
+                display: none;
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            .shape-image-one {
+                top: 17%;
+                left: 3%;
+            }
+
+            .shape-image-two {
+                top: 35%;
+                left: 25%;
+            }
+            
+            .shape-image-three {
+                top: 75%;
+                left: 20%;
+            }
+
+            .shape-image-four {
+                top: 24%;
+                right: 8%;
+            }
+
+            .shape-image-five {
+                top: 65%;
+                right: 10%;
+            }
+
+            .shape-image-six {
+                top: 99%;
+                right: 11%;
+            }
+
+            .shape-image-seven {
+                top: 85%;
+                left: -5%;
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            .shape-image-one {
+                top: 17%;
+                left: 4%;
+            }
+    
+            .shape-image-two {
+                top: 31%;
+                left: 23%;
+            }
+    
+            .shape-image-three {
+                top: 47%;
+                left: 14%;
+            }
+
+            .shape-image-four {
+                top: 24%;
+                right: 12%;
+            }
+
+            .shape-image-five {
+                top: 57%;
+                right: 4%;
+            }
+
+            .shape-image-six {
+                top: 72%;
+                right: 20%;
+            }
+
+            .shape-image-seven {
+                top: 70%;
+                left: 0;
+            }
+        }
+
+        @media only screen and (min-width: 1800px) {
+            .shape-image-one {
+                left: 15%;
+            }
+    
+            .shape-image-two {
+                left: 29%;
+            }
+    
+            .shape-image-three {
+                top: 55%;
+                left: 22%;
+            }
+
+            .shape-image-four {
+                top: 20%;
+                right: 26%;
+            }
+
+            .shape-image-five {
+                top: 56%;
+                right: 11%;
+            }
+
+            .shape-image-six {
+                top: 75%;
+                right: 25%;
+            }
+
+            .shape-image-seven {
+                width: 60rem;
+                height: auto;
+                top: 70%;
+            }
         }
     }
 

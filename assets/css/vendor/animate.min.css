@@ -1684,4 +1684,16 @@
 :root {
   --animate-duration: .15s;
 }
+
+@keyframes upDown {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+.animate__upDown {
+  animation-name: upDown;
+}
 /*# sourceMappingURL=animate.min.css.map */

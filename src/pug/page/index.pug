@@ -4,6 +4,14 @@ body#homepage-page
     include ../common/header/navbar
 
     section.section.bg-primary-soft#section-header
+        .hero-shape
+            +shape-image(shapeSVGCircle1)(class="shape-image-one animate__animated animate__upDown")
+            +shape-image(shapeSVGCircle1)(class="shape-image-two animate__animated animate__upDown animate__delay-1s")
+            +shape-image(shapeSVGDotGroup1)(class="shape-image-three animate__animated animate__upDown animate__delay-2s")
+            +shape-image(shapeSVGCircle1)(class="shape-image-four animate__animated animate__upDown animate__delay-2s")
+            +shape-image(shapeSVGCircle1)(class="shape-image-five animate__animated animate__upDown animate__delay-1s")
+            +shape-image(shapeSVGDotGroup1)(class="shape-image-six animate__animated animate__upDown animate__delay-4s")
+            +shape-image(shapeSVGLine1)(class="shape-image-seven")
         .container.d-flex.flex-column
             .heading.d-flex.flex-column.mx-auto.text-center
                 h5.mb-3
