@@ -1,0 +1,19 @@
+// Bootstrap navbar
+@import "~bootstrap/scss/_nav";
+
+.social-nav {
+    --#{$prefix}nav-link-padding-x: 0;
+    --#{$prefix}nav-link-padding-y: 0;
+
+    .nav-item:not(:first-child) {
+        margin-left: rem(23px);
+    }
+
+    .nav-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: $icon-size;
+        color: $body-color;
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "navbarNav" : [
+        {"text": "project", "link": "/project"}, 
+        {"text": "blog"}
+    ]
+}

@@ -1,5 +1,3 @@
-- var navbarNav = [{"text": "Project", "link": "/project"}, {"text": "Blog", "link": "#"}];
-
 mixin navbar-brand
     a.navbar-brand(href="#")
         h5.fw-bold.mb-0
@@ -10,17 +8,18 @@ mixin navbar-nav(navActive)
     ul.navbar-nav
         each nav in navbarNav
             li.nav-item
-                a.nav-link(href=(nav.link !== "" ? nav.link : "#"), class=(nav.text === navActive ? "active" : ""))= nav.text
+                a.nav-link(href=(nav.link != null ? nav.link : "#"), class=(nav.text === navActive ? "active" : ""))= nav.text
+        a.btn.btn-primary.fw-semibold.text-white(href="#") Contact Me
 
 nav#navbarWrapper
     .container 
         .navbar
             .navbar-desktop
                 +navbar-brand
-                +navbar-nav(pageActive)
+                +navbar-nav(pageName)
                 +btn-bars(class="navbar-toggle")
             .navbar-mobile
                 .d-flex.align-items-center.justify-content-between 
                     +navbar-brand 
                     +btn-close(class="navbar-toggle")
-                +navbar-nav
+                +navbar-nav(pageName)

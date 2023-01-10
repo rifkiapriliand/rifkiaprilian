@@ -40,9 +40,10 @@
     width: 100%;
 
     .navbar-nav {
+        align-items: center;
         flex-direction: row;
 
-        .nav-item {
+        & > * {
             &:not(:first-child) {
                 margin-left: rem(45px);
             }
@@ -90,6 +91,10 @@
         .nav-link {
             padding: rem(10px) 0;
         }
+
+        .btn {
+            margin-top: rem(15px);
+        }
     }
 }
 
@@ -101,9 +106,15 @@
     --#{$prefix}nav-link-hover-color: #{$primary};
 
     .nav-link {
+        text-transform: capitalize;
+
         &:hover.active {
             color: var(--#{$prefix}nav-link-hover-color);
         }
+    }
+
+    .btn {
+        padding: rem(13px) rem(20px);
     }
 }
 

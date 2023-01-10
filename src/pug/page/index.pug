@@ -5,18 +5,18 @@ body#homepage-page
 
     section.section.bg-primary-soft#section-header
         .hero-shape
-            +shape-image(shapeSVGCircle1)(class="shape-image-one animate__animated animate__upDown")
-            +shape-image(shapeSVGCircle1)(class="shape-image-two animate__animated animate__upDown animate__delay-1s")
-            +shape-image(shapeSVGDotGroup1)(class="shape-image-three animate__animated animate__upDown animate__delay-2s")
-            +shape-image(shapeSVGCircle1)(class="shape-image-four animate__animated animate__upDown animate__delay-2s")
-            +shape-image(shapeSVGCircle1)(class="shape-image-five animate__animated animate__upDown animate__delay-1s")
-            +shape-image(shapeSVGDotGroup1)(class="shape-image-six animate__animated animate__upDown animate__delay-4s")
-            +shape-image(shapeSVGLine1)(class="shape-image-seven")
+            +shape-image(shapeSVG.circle.one)(class="shape-image-one animate__animated animate__upDown")
+            +shape-image(shapeSVG.circle.one)(class="shape-image-two animate__animated animate__upDown animate__delay-1s")
+            +shape-image(shapeSVG.dotGroup.one)(class="shape-image-three animate__animated animate__upDown animate__delay-2s")
+            +shape-image(shapeSVG.circle.one)(class="shape-image-four animate__animated animate__upDown animate__delay-2s")
+            +shape-image(shapeSVG.circle.one)(class="shape-image-five animate__animated animate__upDown animate__delay-1s")
+            +shape-image(shapeSVG.dotGroup.one)(class="shape-image-six animate__animated animate__upDown animate__delay-4s")
+            +shape-image(shapeSVG.line.one)(class="shape-image-seven")
         .container.d-flex.flex-column
             .heading.d-flex.flex-column.mx-auto.text-center
                 h5.mb-3
                     span.fw-normal Hi, i'am 
-                    | Rifqi Aprlian D
+                    =pageDefault.name
                 h1.mb-0
                     span.fw-normal An 
                     | Website Developer 
@@ -25,7 +25,7 @@ body#homepage-page
             a(href="#").btn.btn-white.btn-lg.mt-5.mx-auto.rounded
                 | Hire Me 
                 i.ri.ri-arrow-right-long.fs-3.ms-2
-    
+
     section.section.section-gap#section-about-us
         .container 
             .row
@@ -36,16 +36,14 @@ body#homepage-page
                     h2.heading.mb-0 Get to know me 
                         span.heading-line further.
                 .col-12.col-md-7.col-lg-8.mt-3.mt-md-0
-                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue lacus urna, quis pretium ipsum ullamcorper bibendum. Aenean eleifend euismod massa, in facilisis est pretium vitae.
-                    .d-flex.mt-3
-                        .btn.btn-lg.btn-primary-soft
+                    each data in content
+                        each about in data.aboutUs
+                            p=about.p
+                    .d-flex.align-items-center.mt-3
+                        a.btn.btn-lg.btn-primary-soft(href=cvLink)
                             i.ri.ri-download.fs-3.me-1
                             | Download Cv
-                        .d-flex.align-items-center.ms-3
-                            a.btn.btn-link.text-body.p-0(href="#")
-                                i.ri.ri-instagram.fs-3
-                            a.btn.btn-link.text-body.p-0.ms-2(href="#")
-                                i.ri.ri-whatsapp.fs-3
+                        +social-nav(class="ms-3")
 
     section.section.section-gap#section-skill 
         .container.d-flex.flex-column.align-items-center
@@ -69,7 +67,7 @@ body#homepage-page
                     .counter.bg-blue-soft
                         h3.counter-count.text-blue 95%
                         .counter-title Wordpress
-        
+
     section.section.section-gap#section-project 
         .container
             .d-flex.flex-column.align-items-center

@@ -11,3 +11,10 @@ mixin btn-close
 
 mixin shape-image(svgUrl)
     img.hero-shape-image(src="data:image/svg+xml;utf8,"+svgUrl+"")&attributes(attributes)
+
+mixin social-nav
+    ul.nav.social-nav&attributes(attributes)
+        each social in socialLink
+            .nav-item 
+                a.nav-link(href=social.link)
+                    i(class=social.icon)

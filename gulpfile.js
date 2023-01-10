@@ -1,10 +1,13 @@
 const { src, dest, watch, series }               = require("gulp");
 const autoprefixer                               = require("gulp-autoprefixer");
 const concat                                     = require("gulp-concat");
-const copy                                       = require('gulp-copy');
+const data                                       = require("gulp-data");
+const del                                        = require("gulp-clean");
+const copy                                       = require("gulp-copy");
 const postcss                                    = require("gulp-postcss");
 const pug                                        = require("gulp-pug");
 const rename                                     = require("gulp-rename");
+const gulpIgnore                                 = require("gulp-ignore");
 const sass                                       = require("gulp-sass")(require("sass"));
 const sourcemaps                                 = require("gulp-sourcemaps");
 const strip                                      = require("gulp-strip-comments");
@@ -12,11 +15,27 @@ const terser                                     = require("gulp-terser");
 const resolveDependencies                        = require("gulp-resolve-dependencies");
 const tildeImporter                              = require("node-sass-tilde-importer");
 const merge                                      = require('merge-stream');
+const JSONmerge                                  = require('gulp-merge-json');
 const browsersync                                = require("browser-sync").create();
+const fs                                         = require('fs');
+
+const files = ["./src/pug/data/data.json"];
+
+// JSON Data Task
+function jsonDataTask() {
+    return src("./src/pug/data/**/*.json")
+        .pipe(JSONmerge({
+            fileName: 'data.json'
+        }))
+        .pipe(dest("./src/pug/data"));
+}
 
 // Pug Task
 function pugTask() {
-    return src(["./src/pug/page/**/*.pug"])
+    return src("./src/pug/page/**/*.pug")
+        .pipe(data(function() {
+            return JSON.parse(fs.readFileSync("./src/pug/data/data.json"))
+        }))
         .pipe(pug({
             pretty: true
         }))
@@ -81,6 +100,13 @@ function copyTask() {
     return merge(images, fonts);
 }
 
+// Check exist file
+function existsFile() {
+    return src("./")
+        .pipe(gulpIgnore.include(files))
+        .pipe(del())
+}
+
 // Browsersync Task
 function browsersyncServe(cb) {
     browsersync.init({
@@ -99,14 +125,17 @@ function browsersyncReload(cb) {
 
 // Watch Task
 function watchTask() {
-    watch("./src/pug/**/*.pug", series(pugTask, browsersyncReload));
+    watch(["./src/pug/data/**/*.json", "!./src/pug/data/data.json"], series(jsonDataTask, browsersyncReload));
+    watch("./src/pug/**/*.pug", series(jsonDataTask, pugTask, browsersyncReload));
     watch("./src/scss/**/*.scss", series(scssTask, browsersyncReload));
     watch("./src/js", series(jsThemeTask, jsVendorTask, browsersyncReload));
-    watch("./src/**", series(copyTask, browsersyncReload));
+    watch("./src/**", series(existsFile, copyTask, browsersyncReload));
 }
 
 // Default Gulp Task
 exports.default = series(
+    existsFile,
+    jsonDataTask,
     copyTask,
     scssTask,
     jsThemeTask,
