@@ -19,11 +19,11 @@ const JSONmerge                                  = require('gulp-merge-json');
 const browsersync                                = require("browser-sync").create();
 const fs                                         = require('fs');
 
-const files = ["./src/pug/data/data.json"];
+const files = "./src/pug/data/data.json";
 
 // JSON Data Task
 function jsonDataTask() {
-    return src("./src/pug/data/**/*.json")
+    return src(["./src/pug/data/**/*.json", "!./src/pug/data/data.json"])
         .pipe(JSONmerge({
             fileName: 'data.json'
         }))
@@ -125,7 +125,7 @@ function browsersyncReload(cb) {
 
 // Watch Task
 function watchTask() {
-    watch(["./src/pug/data/**/*.json", "!./src/pug/data/data.json"], series(jsonDataTask, browsersyncReload));
+    watch(["./src/pug/data/**/*.json", "!./src/pug/data/data.json"], series(existsFile, jsonDataTask, browsersyncReload));
     watch("./src/pug/**/*.pug", series(jsonDataTask, pugTask, browsersyncReload));
     watch("./src/scss/**/*.scss", series(scssTask, browsersyncReload));
     watch("./src/js", series(jsThemeTask, jsVendorTask, browsersyncReload));

@@ -1,7 +1,7 @@
 {
     "content": [{
         "aboutUs": [
-            {"p": "psum dolor sit amet, consectetur adipiscing elit. Sed congue lacus urna, quis pretium ipsum ullamcorper bibendum. Aenean eleifend euismod massa, in facilisis est pretium vitae."},
+            {"p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue lacus urna, quis pretium ipsum ullamcorper bibendum. Aenean eleifend euismod massa, in facilisis est pretium vitae."},
             {"p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue lacus urna, quis pretium ipsum ullamcorper bibendum."}
         ]
     }]
