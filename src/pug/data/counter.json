@@ -1,0 +1,12 @@
+{
+    "counter": [
+        {
+            "mySkill": [
+                {"title": "html", "percent": "95", "colorName": "greenishCyan"},
+                {"title": "css3", "percent": "95", "colorName": "green"},
+                {"title": "javascript", "percent": "65", "colorName": "yellow"},
+                {"title": "wordpress", "percent": "95", "colorName": "blue"}
+            ]
+        }
+    ]
+}

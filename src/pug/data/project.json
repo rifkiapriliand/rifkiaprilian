@@ -1,0 +1,99 @@
+{
+    "projectData": [
+        {
+            "id": "1",
+            "link": "#",
+            "about": {
+                "title": "Convert Figma to HTML Template",
+                "date": "March 30, 2022",
+                "client": {
+                    "name": "Peterdraw",
+                    "country": "Indonesian",
+                    "countryCode": "IDN"
+                },
+                "category": ["convert", "figma", "html", "themeforest"],
+                "link": "https://preview.themeforest.net/item/ziro-freelancer-directory-website-html-template/full_screen_preview/38108838?_ga=2.1395381.528005126.1673575579-1606607550.1657530881"
+            },
+            "image": {
+                "thumbnails": "../assets/images/project/1/thumb.jpg",
+                "gallery": [
+                    "../assets/images/project/1/gallery-1.jpg"
+                ]
+            },
+            "content": {
+                "summary": "A dedicated product design team can help you achieve your business goals. Whether you need to craft an idea for a completely new product or elevate the quality of an existing solution, we'll help you to create a product that is laser targeted to your users' needs and delivers business results.",
+                "content": "<p>A dedicated product design team can help you achieve your business goals. Whether you need to craft an idea for a completely new product or elevate the quality of an existing solution, we'll help you to create a product that is laser targeted to your users' needs and delivers business results.</p><p>A dedicated product design team can help you achieve your business goals. Whether you need to craft an idea for a completely new product or elevate the quality of an existing solution.</p>"
+            }
+        },
+        {
+            "id": "2",
+            "link": "#",
+            "type": "gallery",
+            "about": {
+                "title": "Personal Portfolio",
+                "date": "December 20, 2022",
+                "client": {
+                    "name": "Rifqi Aprilian D",
+                    "country": "Indonesian",
+                    "countryCode": "IDN"
+                },
+                "category": ["figma", "ui/ux", "ui design"]
+            },
+            "image": {
+                "thumbnails": "../assets/images/project/1/thumb.jpg",
+                "gallery": [
+                    "../assets/images/project/2/gallery-1.jpg",
+                    "../assets/images/project/1/gallery-1.jpg",
+                    "../assets/images/project/1/thumb.jpg"
+                ]
+            }
+        },
+        {
+            "id": "3",
+            "link": "#",
+            "type": "video",
+            "about": {
+                "title": "Editor Video",
+                "date": "August 16, 2021",
+                "client": {
+                    "name": "Berkah Global Business",
+                    "country": "Indonesian",
+                    "countryCode": "IDN"
+                },
+                "category": ["editor video", "video"],
+                "link": "https://youtu.be/7dU6ddYjA_A"
+            },
+            "image": {
+                "thumbnails": "../assets/images/project/1/thumb.jpg",
+                "gallery": [
+                    "../assets/images/project/1/gallery-1.jpg"
+                ]
+            }
+        },
+        {
+            "id": "4",
+            "link": "#",
+            "about": {
+                "title": "Clone and Develop Wordpress with Woocommerce",
+                "date": "January 31, 2022",
+                "client": {
+                    "name": "HAKII Indonesia",
+                    "country": "Indonesian",
+                    "countryCode": "IDN"
+                },
+                "category": ["wordpress", "elementor", "slicing", "woocommerce"],
+                "link": "https://www.hakii-indonesia.com/"
+            },
+            "image": {
+                "thumbnails": "../assets/images/project/1/thumb.jpg",
+                "gallery": [
+                    "../assets/images/project/1/gallery-1.jpg"
+                ]
+            },
+            "content": {
+                "summary": "A dedicated product design team can help you achieve your business goals. Whether you need to craft an idea for a completely new product or elevate the quality of an existing solution, we'll help you to create a product that is laser targeted to your users' needs and delivers business results.",
+                "content": "<p>A dedicated product design team can help you achieve your business goals. Whether you need to craft an idea for a completely new product or elevate the quality of an existing solution, we'll help you to create a product that is laser targeted to your users' needs and delivers business results.</p><p>A dedicated product design team can help you achieve your business goals. Whether you need to craft an idea for a completely new product or elevate the quality of an existing solution.</p>"
+            }
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+.project-list-grid {
+    display: grid;
+    gap: rem(30px);
+
+    @include media-breakpoint-up(md) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-item {
+        position: relative;
+        height: rem(330px);
+        overflow: hidden;
+        border-radius: $border-radius;
+
+        &:hover {
+            & .project-thumb {
+                transform: scale(1.1);
+            }
+
+            &::after {
+                opacity: 1;
+            }
+
+            & .project-about,
+            & .project-btn {
+                animation-name: fadeInUp;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            background: rgba(255, 255, 255, 0.18) !important;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            backdrop-filter: blur(1.5px);
+            -webkit-backdrop-filter: blur(1.5px);
+            transition: opacity .15s ease-in-out;
+        }
+
+        .project-thumb {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            transition: transform .5s;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                user-select: none;
+                -webkit-user-drag: none;
+            }
+        }
+
+        .project-content {
+            z-index: 10 ;
+        }
+
+        .project-about {
+            background-color: $body-bg;
+            padding: rem(20px);
+            margin: rem(20px);
+            opacity: 0;
+            border-radius: $border-radius;
+            animation-duration: .4s;
+            animation-fill-mode: both;
+
+            .project-title {
+                color: $body-color;
+                font-weight: $font-weight-semibold;
+                text-decoration: none;
+            }
+
+            table.detail {
+                background-color: var(--#{$prefix}primary-soft);
+                width: 100%;
+                border-radius: $border-radius;
+
+                td {
+                    font-size: $small-font-size;
+                    padding: 10px 15px;
+                }
+            }
+        }
+
+        .project-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $body-bg;
+            color: $body-color;
+            font-size: rem(22px);
+            height: rem(70px);
+            width: rem(70px);
+            opacity: 0;
+            border-radius: 50rem;
+            text-decoration: none;
+            animation-duration: .4s;
+            animation-fill-mode: both;
+
+            &.gallery:not(:first-child) {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "whyMeData": [
+        {
+            "title": "Communicative",
+            "content": "I communicate what I struggle to make all crystal clear. I can communicate my ideas well, proven by my videos",
+            "color": "danger"
+        },
+        {
+            "title": "Communicative",
+            "content": "I communicate what I struggle to make all crystal clear. I can communicate my ideas well, proven by my videos",
+            "color": "warning"
+        },
+        {
+            "title": "Communicative",
+            "content": "I communicate what I struggle to make all crystal clear. I can communicate my ideas well, proven by my videos",
+            "color": "info"
+        }
+    ]
+}

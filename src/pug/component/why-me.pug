@@ -1,0 +1,6 @@
+mixin whyMe-grid
+    .why-me-grid&attributes(attributes)
+        each data in whyMeData
+            .why-me-item(class="bg-"+data.color+"-soft")
+                h5.mb-1=data.title
+                p.mb-0=data.content

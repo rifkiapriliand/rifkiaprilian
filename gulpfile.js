@@ -19,7 +19,7 @@ const JSONmerge                                  = require('gulp-merge-json');
 const browsersync                                = require("browser-sync").create();
 const fs                                         = require('fs');
 
-const files = "./src/pug/data/data.json";
+const files = ["./src/pug/data/data.json"];
 
 // JSON Data Task
 function jsonDataTask() {

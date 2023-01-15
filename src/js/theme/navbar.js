@@ -33,4 +33,3 @@ $(".navbar-toggle").click(function() {
         $(".navbar-mobile").removeClass("show");
     }
 })
-

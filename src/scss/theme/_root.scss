@@ -8,6 +8,10 @@
         --#{$prefix}#{$color}-soft: #{$value};
     }
 
+    @each $color, $value in $theme-colors-soft {
+        --#{$prefix}#{$color}-soft: #{$value};
+    }
+
 }
 
 // Bootstrap root

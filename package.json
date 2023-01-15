@@ -43,6 +43,8 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.3",
-    "jquery": "^3.6.3"
+    "fslightbox": "^3.3.2-2",
+    "jquery": "^3.6.3",
+    "waypoints": "^4.0.1"
   }
 }

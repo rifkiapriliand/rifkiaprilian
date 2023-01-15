@@ -215,4 +215,29 @@ body#homepage-page {
         }
     }
     
+    #section-why-me {
+        @include media-breakpoint-down(sm) {
+            .heading {
+                width: 75%;
+            }
+        }
+
+        @include media-breakpoint-only(sm) {
+            .heading {
+                width: 60%;
+            }
+        }
+
+        @include media-breakpoint-between(md, lg) {
+            .heading {
+                width: 45%;
+            }
+        }
+
+        @include media-breakpoint-only(lg) {
+            .heading {
+                width: 85%;
+            }
+        }
+    }
 }

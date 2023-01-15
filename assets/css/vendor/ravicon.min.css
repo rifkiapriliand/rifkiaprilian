@@ -39,4 +39,13 @@
 .ri-whatsapp:before {
   content: "\e803";
 } /* '' */
+.ri-eye:before {
+  content: "\e806";
+} /* '' */
+.ri-link:before {
+  content: "\e807";
+} /* '' */
+.ri-play:before {
+  content: "\e809";
+} /* '' */
 /*# sourceMappingURL=ravicon.min.css.map */

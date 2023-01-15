@@ -1,0 +1,7 @@
+mixin counter-skill
+    .counters.counter-skill&attributes(attributes)
+        each count in counter
+            each skill in count.mySkill
+                .counter-item(class="bg-"+skill.colorName+"-soft")
+                    h3.counter-count(countUp class="text-"+skill.colorName)=skill.percent
+                    .counter-title=skill.title

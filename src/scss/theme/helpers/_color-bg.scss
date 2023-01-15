@@ -5,6 +5,10 @@
         background-color: $color-soft !important;
     }
 
+    .text-#{$color}-soft {
+        color: $color-soft !important;
+    }
+
     .text-bg-#{$color}-soft {
         color: $value;
         background-color: $color-soft !important;

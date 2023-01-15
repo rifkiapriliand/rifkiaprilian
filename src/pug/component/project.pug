@@ -1,0 +1,30 @@
+mixin project-list-grid
+    .project-list-grid&attributes(attributes)
+        each data in projectData
+            .project-item
+                .project-thumb
+                    img(src=data.image.thumbnails, alt="")
+                if data.type != "video" && data.type != "gallery"
+                    .project-content.position-absolute.bottom-0.start-0.w-100
+                        .project-about
+                            h5
+                                a.project-title(href="#")=data.about.title
+                            .d-flex.flex-column
+                                if data.about.client.name != null
+                                    .d-flex.align-items-center
+                                        .d-block.fs-2
+                                            | Client 
+                                            span.fw-semibold=data.about.client.name +" ("+ data.about.client.countryCode+") "
+                                if data.about.link != null
+                                    .d-flex.mt-2
+                                        a.btn-link.text-body.fw-semibold(href=(data.about.link != null ? data.about.link : "#") target="_blank") 
+                                            |  Final Project
+                else if data.type == "video"
+                    .project-content.position-absolute.top-50.start-50.translate-middle
+                        a.project-btn(data-fslightbox href=(data.about.link != null ? data.about.link : "#"))
+                            i.ri.ri-play
+                else if data.type == "gallery"
+                    .project-content.position-absolute.top-50.start-50.translate-middle
+                        each gallery in data.image.gallery
+                            a.project-btn.gallery(data-fslightbox="gallery-"+data.id href=(gallery != null ? gallery : "#"))
+                                i.ri.ri-eye
