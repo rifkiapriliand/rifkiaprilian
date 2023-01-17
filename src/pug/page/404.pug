@@ -1,6 +1,11 @@
 include ../common/header/header-files
 
-body#404-page
-    h1 404
+body.bg-primary-soft#page-404
+    .container.d-flex.flex-column.align-items-center.justify-content-center
+        h1.title.mb-0 404
+        p.h6.fw-normal.text-center.mx-5 Sorry the link you are looking for was not found
+        a(href="/").btn.btn-white.btn-lg.mt-3.mx-auto.rounded.shadow
+            | Home
+            i.ri.ri-arrow-right-long.fs-3.ms-2
 
 include ../common/footer/footer-files

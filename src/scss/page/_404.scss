@@ -1,0 +1,9 @@
+body#page-404 {
+    .container {
+        height: 100vh;
+    }
+
+    h1.title {
+        @include font-size(120px);
+    }
+}

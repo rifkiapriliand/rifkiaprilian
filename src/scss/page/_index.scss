@@ -10,10 +10,6 @@ body#homepage-page {
             z-index: 10;
         }
 
-        .btn {
-            box-shadow: $box-shadow;
-        }
-
         @include media-breakpoint-up(lg) {
             .heading {
                 max-width: 50%;
