@@ -4980,6 +4980,8 @@ textarea.form-control-lg {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
