@@ -99,7 +99,7 @@
 				]
 			},
 			"image": {
-				"thumbnails": "../assets/images/project/1/thumb.jpg",
+				"thumbnails": "../assets/images/project/2/thumb.jpg",
 				"gallery": [
 					"../assets/images/project/2/gallery-1.jpg",
 					"../assets/images/project/1/gallery-1.jpg",
@@ -151,7 +151,7 @@
 				"link": "https://www.hakii-indonesia.com/"
 			},
 			"image": {
-				"thumbnails": "../assets/images/project/1/thumb.jpg",
+				"thumbnails": "../assets/images/project/4/thumb.jpg",
 				"gallery": [
 					"../assets/images/project/1/gallery-1.jpg"
 				]
