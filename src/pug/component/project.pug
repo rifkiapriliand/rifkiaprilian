@@ -5,20 +5,9 @@ mixin project-list-grid
                 .project-thumb
                     img(src=data.image.thumbnails, alt="")
                 if data.type != "video" && data.type != "gallery"
-                    .project-content.position-absolute.bottom-0.start-0.w-100
-                        .project-about
-                            h5
-                                a.project-title(href="#")=data.about.title
-                            .d-flex.flex-column
-                                if data.about.client.name != null
-                                    .d-flex.align-items-center
-                                        .d-block.fs-2
-                                            | Client 
-                                            span.fw-semibold=data.about.client.name +" ("+ data.about.client.countryCode+") "
-                                if data.about.link != null
-                                    .d-flex.mt-2
-                                        a.btn-link.text-body.fw-semibold(href=(data.about.link != null ? data.about.link : "#") target="_blank") 
-                                            |  Final Project
+                    .project-content.position-absolute.top-50.start-50.translate-middle
+                        a.project-btn(href=(data.about.link != null ? data.about.link : "#") target="_blank")
+                            i.ri.ri-arrow-up-right
                 else if data.type == "video"
                     .project-content.position-absolute.top-50.start-50.translate-middle
                         a.project-btn(data-fslightbox href=(data.about.link != null ? data.about.link : "#"))
@@ -28,3 +17,15 @@ mixin project-list-grid
                         each gallery in data.image.gallery
                             a.project-btn.gallery(data-fslightbox="gallery-"+data.id href=(gallery != null ? gallery : "#"))
                                 i.ri.ri-eye
+                if data.link != null
+                    .project-content.position-absolute.bottom-0.start-0.w-100
+                        .project-about
+                            .d-flex.justify-content-between
+                                if data.about.client.name != null
+                                    .d-flex.align-items-center
+                                        .d-block.fs-2
+                                            | Client 
+                                            span.fw-semibold=data.about.client.name +" ("+ data.about.client.countryCode+") "
+                                .d-flex.ms-3
+                                    a.btn-link.fs-2.text-body.fw-semibold.text-decoration-none(href=(data.link != null ? data.link : "#")) 
+                                        |  View Study Case

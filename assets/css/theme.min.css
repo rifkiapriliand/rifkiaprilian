@@ -4990,26 +4990,13 @@ textarea.form-control-lg {
 }
 .project-list-grid .project-item .project-about {
   background-color: #fff;
-  padding: 1.25rem;
-  margin: 1.25rem;
+  padding: 0.9375rem 1.25rem;
   opacity: 0;
-  border-radius: 0.8125rem;
+  border-top-right-radius: 0.8125rem;
+  border-top-left-radius: 0.8125rem;
   animation-duration: 0.4s;
   animation-fill-mode: both;
-}
-.project-list-grid .project-item .project-about .project-title {
-  color: #000;
-  font-weight: 600;
-  text-decoration: none;
-}
-.project-list-grid .project-item .project-about table.detail {
-  background-color: var(--bs-primary-soft);
-  width: 100%;
-  border-radius: 0.8125rem;
-}
-.project-list-grid .project-item .project-about table.detail td {
-  font-size: 0.875em;
-  padding: 10px 15px;
+  animation-delay: 0.15s;
 }
 .project-list-grid .project-item .project-btn {
   display: inline-flex;

@@ -39,6 +39,9 @@
 .ri-whatsapp:before {
   content: "\e803";
 } /* '' */
+.ri-arrow-up-right:before {
+  content: "\e804";
+} /* '' */
 .ri-eye:before {
   content: "\e806";
 } /* '' */

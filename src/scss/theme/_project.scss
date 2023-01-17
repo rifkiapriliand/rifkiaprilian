@@ -64,29 +64,13 @@
 
         .project-about {
             background-color: $body-bg;
-            padding: rem(20px);
-            margin: rem(20px);
+            padding: rem(15px) rem(20px);
             opacity: 0;
-            border-radius: $border-radius;
+            border-top-right-radius: $border-radius;
+            border-top-left-radius: $border-radius;
             animation-duration: .4s;
             animation-fill-mode: both;
-
-            .project-title {
-                color: $body-color;
-                font-weight: $font-weight-semibold;
-                text-decoration: none;
-            }
-
-            table.detail {
-                background-color: var(--#{$prefix}primary-soft);
-                width: 100%;
-                border-radius: $border-radius;
-
-                td {
-                    font-size: $small-font-size;
-                    padding: 10px 15px;
-                }
-            }
+            animation-delay: .15s;
         }
 
         .project-btn {

@@ -27,7 +27,6 @@
         },
         {
             "id": "2",
-            "link": "#",
             "type": "gallery",
             "about": {
                 "title": "Personal Portfolio",
@@ -50,7 +49,6 @@
         },
         {
             "id": "3",
-            "link": "#",
             "type": "video",
             "about": {
                 "title": "Editor Video",
