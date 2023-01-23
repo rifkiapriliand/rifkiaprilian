@@ -17,7 +17,7 @@ mixin project-list-grid
                         each gallery in data.image.gallery
                             a.project-btn.gallery(data-fslightbox="gallery-"+data.id href=(gallery != null ? gallery : "#"))
                                 i.ri.ri-eye
-                if data.link != null
+                if data.link != null && data.about.client.name != null
                     .project-content.position-absolute.bottom-0.start-0.w-100
                         .project-about
                             .d-flex.justify-content-between
@@ -26,6 +26,7 @@ mixin project-list-grid
                                         .d-block.fs-2
                                             | Client 
                                             span.fw-semibold=data.about.client.name +" ("+ data.about.client.countryCode+") "
-                                .d-flex.ms-3
-                                    a.btn-link.fs-2.text-body.fw-semibold.text-decoration-none(href=(data.link != null ? data.link : "#")) 
-                                        |  View Study Case
+                                if data.link != null && data.link != "#"
+                                    .d-flex.ms-3
+                                        a.btn-link.fs-2.text-body.fw-semibold.text-decoration-none(href=(data.link != null ? data.link : "#")) 
+                                            |  View Study Case

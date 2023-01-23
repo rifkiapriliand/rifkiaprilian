@@ -16,10 +16,20 @@ const resolveDependencies                        = require("gulp-resolve-depende
 const tildeImporter                              = require("node-sass-tilde-importer");
 const merge                                      = require('merge-stream');
 const JSONmerge                                  = require('gulp-merge-json');
+const fileinclude                                = require('gulp-file-include');
 const browsersync                                = require("browser-sync").create();
 const fs                                         = require('fs');
 
 const files = ["./src/pug/data/data.json"];
+
+function fileIncludeTask() {
+    return src("./**/*.html")
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(dest('./'));
+}
 
 // JSON Data Task
 function jsonDataTask() {
@@ -126,7 +136,7 @@ function browsersyncReload(cb) {
 // Watch Task
 function watchTask() {
     watch(["./src/pug/data/**/*.json", "!./src/pug/data/data.json"], series(existsFile, jsonDataTask, browsersyncReload));
-    watch("./src/pug/**/*.pug", series(jsonDataTask, pugTask, browsersyncReload));
+    watch("./src/pug/**/*.pug", series(jsonDataTask, pugTask, fileIncludeTask, browsersyncReload));
     watch("./src/scss/**/*.scss", series(scssTask, browsersyncReload));
     watch("./src/js", series(jsThemeTask, jsVendorTask, browsersyncReload));
     watch("./src/**", series(existsFile, copyTask, browsersyncReload));
@@ -141,6 +151,7 @@ exports.default = series(
     jsThemeTask,
     jsVendorTask,
     pugTask,
+    fileIncludeTask,
     browsersyncServe,
     watchTask
 )

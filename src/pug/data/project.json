@@ -15,9 +15,9 @@
                 "link": "https://preview.themeforest.net/item/ziro-freelancer-directory-website-html-template/full_screen_preview/38108838?_ga=2.1395381.528005126.1673575579-1606607550.1657530881"
             },
             "image": {
-                "thumbnails": "../assets/images/project/1/thumb.jpg",
+                "thumbnails": "@@webRoot/assets/images/project/1/thumb.jpg",
                 "gallery": [
-                    "../assets/images/project/1/gallery-1.jpg"
+                    "@@webRoot/assets/images/project/1/gallery-1.jpg"
                 ]
             },
             "content": {
@@ -29,42 +29,41 @@
             "id": "2",
             "type": "gallery",
             "about": {
-                "title": "Personal Portfolio",
+                "title": "Design Personal Portfolio and Convert to HTML",
                 "date": "December 20, 2022",
                 "client": {
                     "name": "Rifqi Aprilian D",
                     "country": "Indonesian",
                     "countryCode": "IDN"
                 },
-                "category": ["figma", "ui/ux", "ui design"]
+                "category": ["figma", "ui/ux", "ui design", "web design"]
             },
             "image": {
-                "thumbnails": "../assets/images/project/2/thumb.jpg",
+                "thumbnails": "@@webRoot/assets/images/project/2/thumb.jpg",
                 "gallery": [
-                    "../assets/images/project/2/gallery-1.jpg",
-                    "../assets/images/project/1/gallery-1.jpg",
-                    "../assets/images/project/1/thumb.jpg"
+                    "@@webRoot/assets/images/project/2/gallery-1.jpg",
+                    "@@webRoot/assets/images/project/1/gallery-1.jpg",
+                    "@@webRoot/assets/images/project/1/thumb.jpg"
                 ]
             }
         },
         {
             "id": "3",
-            "type": "video",
+            "type": "gallery",
             "about": {
-                "title": "Editor Video",
-                "date": "August 16, 2021",
+                "title": "Online store mobile application design",
+                "date": "October 16, 2022",
                 "client": {
-                    "name": "Berkah Global Business",
+                    "name": "Berkah Chicken Organic",
                     "country": "Indonesian",
                     "countryCode": "IDN"
                 },
-                "category": ["editor video", "video"],
-                "link": "https://youtu.be/7dU6ddYjA_A"
+                "category": ["ui/ux", "figma", "mobile app", "ui design"]
             },
             "image": {
-                "thumbnails": "../assets/images/project/1/thumb.jpg",
+                "thumbnails": "@@webRoot/assets/images/project/3/thumb.jpg",
                 "gallery": [
-                    "../assets/images/project/1/gallery-1.jpg"
+                    "@@webRoot/assets/images/project/1/gallery-1.jpg"
                 ]
             }
         },
@@ -83,9 +82,9 @@
                 "link": "https://www.hakii-indonesia.com/"
             },
             "image": {
-                "thumbnails": "../assets/images/project/4/thumb.jpg",
+                "thumbnails": "@@webRoot/assets/images/project/4/thumb.jpg",
                 "gallery": [
-                    "../assets/images/project/1/gallery-1.jpg"
+                    "@@webRoot/assets/images/project/1/gallery-1.jpg"
                 ]
             },
             "content": {

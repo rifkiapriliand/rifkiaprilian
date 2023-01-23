@@ -3,4 +3,5 @@
  * @requires ../../node_modules/bootstrap/dist/js/bootstrap.bundle.js
  * @requires ../../node_modules/waypoints/lib/jquery.waypoints.js
  * @requires ../../node_modules/fslightbox/index.js
+ * @requires ../../node_modules/swiper/swiper-bundle.js
  * */

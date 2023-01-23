@@ -4789,6 +4789,17 @@ textarea.form-control-lg {
     flex: auto;
   }
 }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .why-me-grid .why-me-item:nth-child(odd) {
+    margin-right: 6.25rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .why-me-grid .why-me-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .why-me-grid .why-me-item:nth-child(odd) {
     margin-right: 6.25rem;
@@ -5333,6 +5344,55 @@ body#homepage-page #section-about-us .heading {
   body#homepage-page #section-why-me .heading {
     width: 85%;
   }
+}
+
+body#project-page #section-header {
+  position: relative;
+  width: 100%;
+  height: 18.75rem;
+  z-index: 1;
+}
+body#project-page #section-header .hero-shape-image {
+  --animate-duration: 4s;
+  animation-iteration-count: infinite;
+}
+body#project-page #section-project-info {
+  position: relative;
+  margin-top: -6.25rem;
+  z-index: 10;
+}
+body#project-page #section-project-info .project-banner {
+  position: relative;
+  width: 100%;
+  height: 25rem;
+  overflow: hidden;
+  border-radius: 0.8125rem;
+}
+body#project-page #section-project-info .project-banner img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left bottom;
+     object-position: left bottom;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+}
+body#project-page #section-project-info .project-details {
+  background-color: #fff;
+  padding: 1.25rem;
+  border-radius: 0.8125rem;
+}
+body#project-page #section-project-info .project-details p {
+  margin-bottom: 0.9375rem;
+}
+body#project-page #section-project-info .project-details p:last-child {
+  margin-bottom: 0;
 }
 
 body#page-404 .container {

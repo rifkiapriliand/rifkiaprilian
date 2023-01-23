@@ -1,0 +1,47 @@
+- var pageName = "project";
+- var projectId = 1;
+
+include ../../common/header/header-files
+
+body#project-page
+    include ../../common/header/navbar
+
+    section.section.bg-primary-soft#section-header
+        .hero-shape
+            +shape-image(shapeSVG.circle.one)(class="shape-image-one animate__animated animate__upDown")
+            +shape-image(shapeSVG.circle.one)(class="shape-image-two animate__animated animate__upDown animate__delay-1s")
+            +shape-image(shapeSVG.dotGroup.one)(class="shape-image-three animate__animated animate__upDown animate__delay-2s")
+            +shape-image(shapeSVG.circle.one)(class="shape-image-four animate__animated animate__upDown animate__delay-2s")
+            +shape-image(shapeSVG.circle.one)(class="shape-image-five animate__animated animate__upDown animate__delay-1s")
+            +shape-image(shapeSVG.dotGroup.one)(class="shape-image-six animate__animated animate__upDown animate__delay-4s")
+
+    .section#section-project-info
+        .container 
+            .row
+                .col-8
+                    .project-banner.mb-3
+                        img(src=projectDataId.image.thumbnails alt="")
+                    .project-body
+                        !=projectDataId.content.content
+                .col-4
+                    .project-details
+                        if projectDataId.about.date != null
+                            .d-grid
+                                a.btn.btn-primary-soft.btn-lg.mb-3(href=projectDataId.about.link) View Project 
+                        p 
+                            | Task : 
+                            span.fw-semibold=projectDataId.about.title
+                        p 
+                            | Client : 
+                            span.fw-semibold
+                                =projectDataId.about.client.name
+                                |  (
+                                =projectDataId.about.client.countryCode
+                                | )
+                        p 
+                            | Date : 
+                            span.fw-semibold=projectDataId.about.date
+
+    include ../../common/footer/footer
+
+include ../../common/footer/footer-files

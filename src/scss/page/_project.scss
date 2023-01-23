@@ -1,0 +1,53 @@
+body#project-page {
+    #section-header {
+        position: relative;
+        width: 100%;
+        height: rem(300px);
+        z-index: 1;
+
+        .hero-shape-image {
+            --animate-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+    }
+
+    #section-project-info {
+        position: relative;
+        margin-top: rem(-100px);
+        z-index: 10;
+
+        .project-banner {
+            position: relative;
+            width: 100%;
+            height: rem(400px);
+            overflow: hidden;
+            border-radius: $border-radius;
+    
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                object-position: left bottom;
+                user-select: none;
+                -webkit-user-drag: none;
+            }
+        }
+
+        .project-details {
+            background-color: $body-bg;
+            padding: rem(20px);
+            border-radius: $border-radius;
+
+            p {
+                margin-bottom: rem(15px);
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
