@@ -1,7 +1,8 @@
 {
     "cvLink": "#",
     "socialLink": [
-        {"name": "instagram", "link": "https://www.instagram.com/rifkiaprilian14_", "icon": "ri ri-instagram"},
-        {"name": "whatsapp", "link": "https://api.whatsapp.com/send?phone=082115911609", "icon": " ri ri-whatsapp"}
+        {"name": "youtube", "link": "https://www.youtube.com/@ravsignofficial", "icon": "ri ri-youtube"},
+        {"name": "instagram", "link": "#", "icon": "ri ri-instagram"},
+        {"name": "whatsapp", "link": "https://wa.me/+6285175031404", "icon": " ri ri-whatsapp"}
     ]
 }
