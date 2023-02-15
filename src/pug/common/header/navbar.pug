@@ -9,7 +9,7 @@ mixin navbar-nav(navActive)
         each nav in navbarNav
             li.nav-item
                 a.nav-link(href=(nav.link != null ? nav.link : "#"), class=(nav.text === navActive ? "active" : ""))= nav.text
-        a.btn.btn-primary.fw-semibold.text-white(href="#") Contact Me
+        a.btn.btn-primary.fw-semibold.text-white(href=emailLink) Contact Me
 
 nav#navbarWrapper
     .container 

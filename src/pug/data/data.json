@@ -3,10 +3,13 @@
 		{
 			"aboutUs": [
 				{
-					"p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue lacus urna, quis pretium ipsum ullamcorper bibendum. Aenean eleifend euismod massa, in facilisis est pretium vitae."
+					"p": "I am from Indonesia and I have worked as a Wordpress Freelancer and Front End Developer for more than 4 years."
 				},
 				{
-					"p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue lacus urna, quis pretium ipsum ullamcorper bibendum."
+					"p": "Before freelancing, I was a writer on my blog specializing in tech and tutorials for over 6 years before focusing on freelancing."
+				},
+				{
+					"p": "I am also the founder of RaVsign which aims to accommodate all my work in the fields of Web Development, Illustrator, Ui/UX Design and also as my company name in the future."
 				}
 			]
 		}
@@ -39,8 +42,7 @@
 	],
 	"navbarNav": [
 		{
-			"text": "project",
-			"link": "/project"
+			"text": "project"
 		},
 		{
 			"text": "blog"
@@ -71,10 +73,7 @@
 				"link": "https://preview.themeforest.net/item/ziro-freelancer-directory-website-html-template/full_screen_preview/38108838?_ga=2.1395381.528005126.1673575579-1606607550.1657530881"
 			},
 			"image": {
-				"thumbnails": "@@webRoot/assets/images/project/1/thumb.jpg",
-				"gallery": [
-					"@@webRoot/assets/images/project/1/gallery-1.jpg"
-				]
+				"thumbnails": "@@webRoot/assets/images/project/1/thumb.jpg"
 			},
 			"content": {
 				"summary": "A dedicated product design team can help you achieve your business goals. Whether you need to craft an idea for a completely new product or elevate the quality of an existing solution, we'll help you to create a product that is laser targeted to your users' needs and delivers business results.",
@@ -102,9 +101,7 @@
 			"image": {
 				"thumbnails": "@@webRoot/assets/images/project/2/thumb.jpg",
 				"gallery": [
-					"@@webRoot/assets/images/project/2/gallery-1.jpg",
-					"@@webRoot/assets/images/project/1/gallery-1.jpg",
-					"@@webRoot/assets/images/project/1/thumb.jpg"
+					"@@webRoot/assets/images/project/2/thumb.jpg"
 				]
 			}
 		},
@@ -129,7 +126,7 @@
 			"image": {
 				"thumbnails": "@@webRoot/assets/images/project/3/thumb.jpg",
 				"gallery": [
-					"@@webRoot/assets/images/project/1/gallery-1.jpg"
+					"@@webRoot/assets/images/project/3/thumb.jpg"
 				]
 			}
 		},
@@ -153,10 +150,7 @@
 				"link": "https://www.hakii-indonesia.com/"
 			},
 			"image": {
-				"thumbnails": "@@webRoot/assets/images/project/4/thumb.jpg",
-				"gallery": [
-					"@@webRoot/assets/images/project/1/gallery-1.jpg"
-				]
+				"thumbnails": "@@webRoot/assets/images/project/4/thumb.jpg"
 			},
 			"content": {
 				"summary": "A dedicated product design team can help you achieve your business goals. Whether you need to craft an idea for a completely new product or elevate the quality of an existing solution, we'll help you to create a product that is laser targeted to your users' needs and delivers business results.",
@@ -175,7 +169,8 @@
 			"one": "%3Csvg width='569' height='106' viewBox='0 0 569 106' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.70682 104.817C2.62047 104.938 2.52239 105.046 2.40594 105.139C1.67604 105.719 0.562685 105.479 0.137424 104.649C-1.47049 101.511 11.5193 88.484 13.6511 86.0461C24.3768 73.7807 36.3012 62.5788 49.0745 52.4704C87.7577 21.8579 135.001 1.85279 184.634 0.134101C263.709 -2.60415 335.137 37.2343 408.109 60.9194C459.966 77.7506 513.602 82.0013 567.847 78.7159C569.684 78.6046 563.037 80.0302 562.034 80.0887C557.912 80.329 553.787 80.5252 549.661 80.6726C536.58 81.1401 523.488 81.1671 510.408 80.6312C471.521 79.0379 433.527 71.498 396.786 58.7579C335.827 37.6201 277.392 9.63365 212.235 3.27253C130.64 -4.69328 49.6539 39.1684 2.70682 104.817Z' fill='url(%23paint0_linear_511_14)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_511_14' x1='225.879' y1='-13.3649' x2='460.379' y2='49.1351' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2300CC9A'/%3E%3Cstop offset='1' stop-color='%2300CC9A' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E"
 		}
 	},
-	"cvLink": "#",
+	"cvLink": "https://drive.google.com/u/0/uc?id=1c-ecn__YQOjtxwNcWVfIf8vlqfaNvw_R",
+	"emailLink": "mailto:ravsign.official@gmail.com",
 	"socialLink": [
 		{
 			"name": "youtube",
@@ -195,18 +190,18 @@
 	],
 	"whyMeData": [
 		{
-			"title": "Communicative",
-			"content": "I communicate what I struggle to make all crystal clear. I can communicate my ideas well, proven by my videos",
+			"title": "Fast",
+			"content": "I am fast in completing work according to a predetermined schedule.",
 			"color": "danger"
 		},
 		{
-			"title": "Communicative",
-			"content": "I communicate what I struggle to make all crystal clear. I can communicate my ideas well, proven by my videos",
+			"title": "Guarantee",
+			"content": "I guarantee that every job I do will be optimal and satisfying. If you are not satisfied? I am ready to discuss with you to improve it until you are completely satisfied.",
 			"color": "warning"
 		},
 		{
-			"title": "Communicative",
-			"content": "I communicate what I struggle to make all crystal clear. I can communicate my ideas well, proven by my videos",
+			"title": "Favourite",
+			"content": "During my time as a Freelancer, my clients are very happy with the work I do.",
 			"color": "info"
 		}
 	]

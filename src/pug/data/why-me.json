@@ -1,18 +1,18 @@
 {
     "whyMeData": [
         {
-            "title": "Communicative",
-            "content": "I communicate what I struggle to make all crystal clear. I can communicate my ideas well, proven by my videos",
+            "title": "Fast",
+            "content": "I am fast in completing work according to a predetermined schedule.",
             "color": "danger"
         },
         {
-            "title": "Communicative",
-            "content": "I communicate what I struggle to make all crystal clear. I can communicate my ideas well, proven by my videos",
+            "title": "Guarantee",
+            "content": "I guarantee that every job I do will be optimal and satisfying. If you are not satisfied? I am ready to discuss with you to improve it until you are completely satisfied.",
             "color": "warning"
         },
         {
-            "title": "Communicative",
-            "content": "I communicate what I struggle to make all crystal clear. I can communicate my ideas well, proven by my videos",
+            "title": "Favourite",
+            "content": "During my time as a Freelancer, my clients are very happy with the work I do.",
             "color": "info"
         }
     ]

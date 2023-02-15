@@ -4779,7 +4779,7 @@ textarea.form-control-lg {
   display: flex;
   flex: 0 0 18.75rem;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 2.1875rem;
   margin: 0.9375rem;
   border-radius: 0.8125rem;

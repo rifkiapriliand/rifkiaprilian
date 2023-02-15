@@ -1,8 +1,9 @@
 {
     "content": [{
         "aboutUs": [
-            {"p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue lacus urna, quis pretium ipsum ullamcorper bibendum. Aenean eleifend euismod massa, in facilisis est pretium vitae."},
-            {"p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue lacus urna, quis pretium ipsum ullamcorper bibendum."}
+            {"p": "I am from Indonesia and I have worked as a Wordpress Freelancer and Front End Developer for more than 4 years."},
+            {"p": "Before freelancing, I was a writer on my blog specializing in tech and tutorials for over 6 years before focusing on freelancing."},
+            {"p": "I am also the founder of RaVsign which aims to accommodate all my work in the fields of Web Development, Illustrator, Ui/UX Design and also as my company name in the future."}
         ]
     }]
 }

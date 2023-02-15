@@ -1,6 +1,6 @@
 {
     "navbarNav" : [
-        {"text": "project", "link": "/project"}, 
+        {"text": "project"},
         {"text": "blog"}
     ]
 }
