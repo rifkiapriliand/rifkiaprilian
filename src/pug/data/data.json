@@ -57,6 +57,33 @@
 			"id": "1",
 			"link": "#",
 			"about": {
+				"title": "Wordpress Development",
+				"date": "March 30, 2022",
+				"client": {
+					"name": "Atmakamedia",
+					"country": "Indonesian",
+					"countryCode": "IDN"
+				},
+				"category": [
+					"convert",
+					"figma",
+					"html",
+					"themeforest"
+				],
+				"link": "https://atmakamedia.id/"
+			},
+			"image": {
+				"thumbnails": "@@webRoot/assets/images/project/5/thumb.jpg"
+			},
+			"content": {
+				"summary": "A dedicated product design team can help you achieve your business goals. Whether you need to craft an idea for a completely new product or elevate the quality of an existing solution, we'll help you to create a product that is laser targeted to your users' needs and delivers business results.",
+				"content": "<p>A dedicated product design team can help you achieve your business goals. Whether you need to craft an idea for a completely new product or elevate the quality of an existing solution, we'll help you to create a product that is laser targeted to your users' needs and delivers business results.</p><p>A dedicated product design team can help you achieve your business goals. Whether you need to craft an idea for a completely new product or elevate the quality of an existing solution.</p>"
+			}
+		},
+		{
+			"id": "2",
+			"link": "#",
+			"about": {
 				"title": "Convert Figma to HTML Template",
 				"date": "March 30, 2022",
 				"client": {
@@ -81,7 +108,7 @@
 			}
 		},
 		{
-			"id": "2",
+			"id": "3",
 			"type": "gallery",
 			"about": {
 				"title": "Design Personal Portfolio and Convert to HTML",
@@ -106,7 +133,34 @@
 			}
 		},
 		{
-			"id": "3",
+			"id": "4",
+			"link": "#",
+			"about": {
+				"title": "Wordpress Development",
+				"date": "March 30, 2022",
+				"client": {
+					"name": "Master Print",
+					"country": "Indonesian",
+					"countryCode": "IDN"
+				},
+				"category": [
+					"convert",
+					"figma",
+					"html",
+					"themeforest"
+				],
+				"link": "https://masterprint.atmakamedia.id/"
+			},
+			"image": {
+				"thumbnails": "@@webRoot/assets/images/project/7/thumb.jpg"
+			},
+			"content": {
+				"summary": "A dedicated product design team can help you achieve your business goals. Whether you need to craft an idea for a completely new product or elevate the quality of an existing solution, we'll help you to create a product that is laser targeted to your users' needs and delivers business results.",
+				"content": "<p>A dedicated product design team can help you achieve your business goals. Whether you need to craft an idea for a completely new product or elevate the quality of an existing solution, we'll help you to create a product that is laser targeted to your users' needs and delivers business results.</p><p>A dedicated product design team can help you achieve your business goals. Whether you need to craft an idea for a completely new product or elevate the quality of an existing solution.</p>"
+			}
+		},
+		{
+			"id": "5",
 			"type": "gallery",
 			"about": {
 				"title": "Online store mobile application design",
@@ -131,26 +185,26 @@
 			}
 		},
 		{
-			"id": "4",
+			"id": "6",
 			"link": "#",
 			"about": {
-				"title": "Clone and Develop Wordpress with Woocommerce",
-				"date": "January 31, 2022",
+				"title": "Wordpress Development",
+				"date": "March 30, 2022",
 				"client": {
-					"name": "HAKII Indonesia",
+					"name": "Berkah Chicken",
 					"country": "Indonesian",
 					"countryCode": "IDN"
 				},
 				"category": [
-					"wordpress",
-					"elementor",
-					"slicing",
-					"woocommerce"
+					"convert",
+					"figma",
+					"html",
+					"themeforest"
 				],
-				"link": "https://www.hakii-indonesia.com/"
+				"link": "https://berkahchicken.co.id/"
 			},
 			"image": {
-				"thumbnails": "@@webRoot/assets/images/project/4/thumb.jpg"
+				"thumbnails": "@@webRoot/assets/images/project/6/thumb.jpg"
 			},
 			"content": {
 				"summary": "A dedicated product design team can help you achieve your business goals. Whether you need to craft an idea for a completely new product or elevate the quality of an existing solution, we'll help you to create a product that is laser targeted to your users' needs and delivers business results.",
